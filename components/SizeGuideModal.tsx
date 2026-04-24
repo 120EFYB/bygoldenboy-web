@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useUIStore } from "@/lib/ui-store";
 
@@ -12,8 +12,15 @@ export const SizeGuideModal = () => {
   const isOpen = useUIStore((state) => state.sizeGuideOpen);
   const onClose = useUIStore((state) => state.closeSizeGuide);
   const product = useUIStore((state) => state.quickViewProduct); // Reuse product if in quickview
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const isShoes = !product || product.category === "calzado";
+
+  if (!mounted) return null;
 
   return (
     <AnimatePresence>
