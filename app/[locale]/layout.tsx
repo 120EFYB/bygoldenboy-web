@@ -12,7 +12,6 @@ import { WishlistDrawer } from "@/components/WishlistDrawer";
 import { QuickViewModal } from "@/components/QuickViewModal";
 import { SizeGuideModal } from "@/components/SizeGuideModal";
 import { CustomCursor } from "@/components/CustomCursor";
-import { PageTransition } from "@/components/PageTransition";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -62,9 +61,7 @@ export default async function LocaleLayout({
           <CustomCursor />
           
           <main className="min-h-screen">
-            <PageTransition>
-              {children}
-            </PageTransition>
+            {children}
           </main>
           
           <Footer />
