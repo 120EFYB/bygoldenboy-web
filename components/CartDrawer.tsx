@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useUIStore } from "@/lib/ui-store";
@@ -15,6 +15,13 @@ import { triggerHaptic } from "@/lib/haptics";
 export const CartDrawer = () => {
   const { cartOpen, closeCart } = useUIStore();
   const { items, removeItem, updateQty, getTotal } = useCartStore();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   const handleWhatsAppOrder = () => {
     const phone = "5219999999999";

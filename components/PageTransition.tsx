@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 
@@ -10,6 +10,13 @@ import { usePathname } from "next/navigation";
  */
 export const PageTransition = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return <>{children}</>;
 
   return (
     <AnimatePresence mode="wait">

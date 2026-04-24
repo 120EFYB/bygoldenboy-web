@@ -8,17 +8,10 @@ import { motion, useSpring, useMotionValue } from "framer-motion";
  * An elite, minimalist pointer for desktop devices.
  */
 export const CustomCursor = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const [isHovering, setIsHovering] = useState(false);
-
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-
-  const springConfig = { damping: 25, stiffness: 250 };
-  const cursorX = useSpring(mouseX, springConfig);
-  const cursorY = useSpring(mouseY, springConfig);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const handleMouseMove = (e: MouseEvent) => {
       mouseX.set(e.clientX - 6);
       mouseY.set(e.clientY - 6);
@@ -55,6 +48,8 @@ export const CustomCursor = () => {
       window.removeEventListener("mouseenter", handleMouseEnter);
     };
   }, [mouseX, mouseY, isVisible]);
+
+  if (!mounted) return null;
 
   return (
     <motion.div
