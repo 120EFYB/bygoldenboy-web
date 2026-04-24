@@ -1,0 +1,90 @@
+{
+  "Home": {
+    "title": "By Goldenboy",
+    "subtitle": "Good taste. Imported style.",
+    "discover": "Discover Collection",
+    "statement": "We don’t sell clothes. We sell the version of you that you always wanted to be."
+  },
+  "Nav": {
+    "women": "Women",
+    "men": "Men",
+    "kids": "Kids",
+    "designers": "Designers",
+    "styling": "Styling Edit",
+    "us": "About Us",
+    "search": "Search",
+    "wishlist": "Wishlist",
+    "account": "Account",
+    "cart": "Cart"
+  },
+  "About": {
+    "heroTitle": "The lifestyle you aspire to already exists",
+    "mission": {
+      "title": "Our Mission",
+      "text": "By Goldenboy is a luxury curation that imports exclusively new designer pieces directly from the most prestigious boutiques in Europe and the United States."
+    },
+    "pillars": {
+      "01": {
+        "title": "Curation",
+        "text": "We meticulously select each piece to ensure it represents the pinnacle of contemporary design."
+      },
+      "02": {
+        "title": "Import",
+        "text": "Premium logistics connecting the world's most exclusive showrooms to your door."
+      },
+      "03": {
+        "title": "Delivery",
+        "text": "Editorial-level unboxing experience with 100% authenticity guarantee."
+      }
+    },
+    "metrics": {
+      "boutiques": "Boutiques",
+      "countries": "Countries",
+      "authentic": "Authenticity"
+    },
+    "vision": {
+      "title": "Vision",
+      "text": "We are building the future of personal luxury in Latin America, merging technology and fine taste."
+    }
+  },
+  "Contact": {
+    "heroTitle": "Let's Talk",
+    "heroSubtitle": "Personalized attention for your lifestyle.",
+    "exclusive": {
+      "title": "By Goldenboy Concept Group",
+      "subtitle": "Join our community",
+      "text": "Exclusive access to the most coveted pieces and limited collections before their public release.",
+      "cta": "Request Access"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Inquiry Type",
+      "message": "Message",
+      "send": "Send Message",
+      "options": {
+        "special": "Special Order",
+        "auth": "Authenticity",
+        "shipping": "Shipping Tracking",
+        "other": "Others"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "Are the pieces authentic?",
+      "a1": "Absolutely. We only import exclusively new and original products directly from authorized boutiques in Europe and the US.",
+      "q2": "Which countries do you ship to?",
+      "a2": "Currently we specialize in Mexico and are expanding our network throughout Latin America.",
+      "q3": "Can you source specific pieces?",
+      "a3": "Yes, our 'Personal Shopping' service can locate almost any designer piece for you."
+    }
+  },
+  "Designers": {
+    "heroTitle": "Designers",
+    "heroSubtitle": "A selection of the world's most prestigious brands.",
+    "featured": "Featured Brands",
+    "all": "All Designers",
+    "explore": "Explore"
+  }
+}

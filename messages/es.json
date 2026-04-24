@@ -1,0 +1,90 @@
+{
+  "Home": {
+    "title": "By Goldenboy",
+    "subtitle": "Good taste. Imported style.",
+    "discover": "Descubrir Colección",
+    "statement": "No vendemos ropa. Vendemos la versión de ti que siempre quisiste ser."
+  },
+  "Nav": {
+    "women": "Mujer",
+    "men": "Hombre",
+    "kids": "Kids",
+    "designers": "Diseñadores",
+    "styling": "Crea tu outfit",
+    "us": "Nosotros",
+    "search": "Buscar",
+    "wishlist": "Lista de deseos",
+    "account": "Mi cuenta",
+    "cart": "Carrito"
+  },
+  "About": {
+    "heroTitle": "El estilo de vida que aspiras ya existe",
+    "mission": {
+      "title": "Nuestra Misión",
+      "text": "By Goldenboy es una curaduría de lujo que importa piezas de diseñador exclusivamente nuevas directamente de las boutiques más prestigiosas de Europa y Estados Unidos."
+    },
+    "pillars": {
+      "01": {
+        "title": "Curaduría",
+        "text": "Seleccionamos minuciosamente cada pieza para asegurar que represente la cima del diseño contemporáneo."
+      },
+      "02": {
+        "title": "Importación",
+        "text": "Logística premium que conecta los showrooms más exclusivos del mundo con tu puerta."
+      },
+      "03": {
+        "title": "Entrega",
+        "text": "Experiencia de unboxing de nivel editorial con garantía total de autenticidad."
+      }
+    },
+    "metrics": {
+      "boutiques": "Boutiques",
+      "countries": "Países",
+      "authentic": "Autenticidad"
+    },
+    "vision": {
+      "title": "Visión",
+      "text": "Estamos construyendo el futuro del lujo personal en Latinoamérica, uniendo tecnología y buen gusto."
+    }
+  },
+  "Contact": {
+    "heroTitle": "Hablemos",
+    "heroSubtitle": "Atención personalizada para tu estilo de vida.",
+    "exclusive": {
+      "title": "By Goldenboy Concept Group",
+      "subtitle": "Forma parte de nuestra comunidad",
+      "text": "Acceso exclusivo a las piezas más codiciadas y colecciones limitadas antes de su lanzamiento público.",
+      "cta": "Solicitar Acceso"
+    },
+    "form": {
+      "title": "Envíanos un mensaje",
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "subject": "Tipo de consulta",
+      "message": "Mensaje",
+      "send": "Enviar Mensaje",
+      "options": {
+        "special": "Pedido Especial",
+        "auth": "Autenticidad",
+        "shipping": "Seguimiento de Envío",
+        "other": "Otros"
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": "¿Las piezas son auténticas?",
+      "a1": "Absolutamente. Solo importamos productos nuevos y originales directamente de boutiques autorizadas en Europa y EE.UU.",
+      "q2": "¿A qué países envían?",
+      "a2": "Actualmente nos especializamos en México y estamos expandiendo nuestra red a toda Latinoamérica.",
+      "q3": "¿Pueden conseguir piezas específicas?",
+      "a3": "Sí, nuestro servicio de 'Personal Shopping' puede localizar casi cualquier pieza de diseñador para ti."
+    }
+  },
+  "Designers": {
+    "heroTitle": "Diseñadores",
+    "heroSubtitle": "Una selección de las marcas más prestigiosas del mundo.",
+    "featured": "Marcas Destacadas",
+    "all": "Todos los Diseñadores",
+    "explore": "Explorar"
+  }
+}

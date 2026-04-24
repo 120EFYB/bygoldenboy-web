@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FAFAF8;
+  --foreground: #0A0A0A;
+  
+  /* Brand colors as variables */
+  --brand-black: #0A0A0A;
+  --brand-gold: #C9A96E;
+  --brand-gold-dark: #A08A52;
+  --brand-gold-light: #E8D5A3;
+  --brand-cream: #F5F0E8;
+  --brand-off-white: #FAFAF8;
+  --brand-graphite: #3D3D3D;
+  --brand-stone: #E8E4DC;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--brand-graphite);
+  background: var(--brand-off-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  line-height: 1.85;
+  font-size: 13px; /* As per CLAUDE.md: Body text 13px */
+}
+
+/* Custom scrollbar style */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--brand-off-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-stone);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-gold);
+}
+
+/* Custom selection color */
+::selection {
+  background-color: var(--brand-gold-light);
+  color: var(--brand-black);
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-light text-brand-black;
+  }
+  
+  a {
+    @apply transition-all duration-300;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .label-decorative {
+    @apply text-[9px] tracking-[6px] uppercase text-brand-gold;
+  }
+}
