@@ -28,13 +28,13 @@ const syne = Syne({
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["400", "500"],
   variable: "--font-dm-sans",
 });
 
 export const metadata: Metadata = {
-  title: "By Goldenboy | Luxury Imported Fashion",
-  description: "By Goldenboy imports new designer pieces directly from Europe and the US.",
+  title: "By Goldenboy | Concept Store de Lujo",
+  description: "Curaduría exclusiva de moda y accesorios importados directamente de boutiques europeas.",
 };
 
 export default async function LocaleLayout({
@@ -44,12 +44,15 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  // Validate that the incoming `locale` parameter is valid
   if (!locales.includes(locale as Locale)) notFound();
+
+  // Providing all messages to the client-side
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body className={`${cormorant.variable} ${syne.variable} ${dmSans.variable} font-body antialiased bg-brand-off-white text-brand-graphite`}>
+    <html lang={locale} className="scroll-smooth">
+      <body className={`${cormorant.variable} ${syne.variable} ${dmSans.variable} font-body antialiased bg-brand-off-white text-brand-graphite selection:bg-brand-gold selection:text-brand-black`}>
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Navbar />
           <CartDrawer />
@@ -57,11 +60,13 @@ export default async function LocaleLayout({
           <QuickViewModal />
           <SizeGuideModal />
           <CustomCursor />
+          
           <main className="min-h-screen">
             <PageTransition>
               {children}
             </PageTransition>
           </main>
+          
           <Footer />
         </NextIntlClientProvider>
       </body>
